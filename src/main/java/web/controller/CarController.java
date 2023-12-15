@@ -18,7 +18,6 @@ public class CarController {
         this.carService = carService;
     }
 
-
     @GetMapping(value = "/cars") // путь в браузере
     public String viewCars(@RequestParam(value = "count") Optional<Integer> count, Model model1) {
         model1.addAttribute("cars", carService.getCars(count.orElse(0)));

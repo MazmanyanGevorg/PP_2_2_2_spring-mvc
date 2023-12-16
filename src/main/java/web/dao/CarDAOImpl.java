@@ -2,7 +2,6 @@ package web.dao;
 
 import org.springframework.stereotype.Repository;
 import web.models.Car;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,7 +14,6 @@ public class CarDAOImpl implements CarDAO {
 
     {
         cars = new ArrayList<>();
-
         cars.add(new Car(++CAR_COUNT, "Ford", 2021, 10000));
         cars.add(new Car(++CAR_COUNT, "Toyota", 2022, 20000));
         cars.add(new Car(++CAR_COUNT, "Subaru", 2023, 30000));

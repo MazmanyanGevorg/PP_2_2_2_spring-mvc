@@ -46,6 +46,7 @@ public class UserDAOImpl implements UserDAO {
 
     private User updateUser(User updateUser, User user) {
         updateUser.setAge(user.getAge());
+        updateUser.setSurname(user.getSurname());
         updateUser.setName(user.getName());
         updateUser.setLevel(user.getLevel());
         updateUser.setPoints(user.getPoints());

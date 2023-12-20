@@ -27,11 +27,11 @@
     <tbody>
     <tr th:each="user:${users}">
             <td th:text="${user.getId()}"/>
-            <td th:text="${user.getSurname()}"/>
             <td th:text="${user.getName()}"/>
+            <td th:text="${user.getSurname()}"/>
             <td th:text="${user.getAge()}"/>
             <td th:text="${user.getLevel()}"/>
-            <td th:text="${user.getPointts()}"/>
+            <td th:text="${user.getPoints()}"/>
     </tr>
     </tbody>
 </table>

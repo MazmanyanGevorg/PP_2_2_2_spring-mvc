@@ -17,11 +17,11 @@
 <table  width="60%" border="5" cellpadding="5" cellspacing="0">
 
     <col width="100" valign="top">
-<!--    <col width="150" valign="top">-->
-<!--    <col width="150" valign="top">-->
-<!--    <col width="150" valign="top">-->
-<!--    <col width="150" valign="top">-->
-<!--    <col width="150" valign="top">-->
+    <!--    <col width="150" valign="top">-->
+    <!--    <col width="150" valign="top">-->
+    <!--    <col width="150" valign="top">-->
+    <!--    <col width="150" valign="top">-->
+    <!--    <col width="150" valign="top">-->
     <thead>
     <tr>
         <th scope="col">id</th>
@@ -33,13 +33,13 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="user:${users}">
-            <td th:text="${user.getId()}"/>
-            <td th:text="${user.getName()}"/>
-            <td th:text="${user.getSurname()}"/>
-            <td th:text="${user.getAge()}"/>
-            <td th:text="${user.getLevel()}"/>
-            <td th:text="${user.getPoints()}"/>
+    <tr th:each="user:${user}">
+        <td th:text="${user.getId()}"/>
+        <td th:text="${user.getName()}"/>
+        <td th:text="${user.getSurname()}"/>
+        <td th:text="${user.getAge()}"/>
+        <td th:text="${user.getLevel()}"/>
+        <td th:text="${user.getPoints()}"/>
     </tr>
     </tbody>
 </table>

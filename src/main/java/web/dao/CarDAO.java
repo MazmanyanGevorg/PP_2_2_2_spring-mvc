@@ -1,9 +1,9 @@
-package web.dao;
-
-import web.model.Car;
-import java.util.List;
-
-public interface CarDAO {
-
-    List<Car> getCars(int count);
-}
+//package web.dao;
+//
+//import web.model.Car;
+//import java.util.List;
+//
+//public interface CarDAO {
+//
+//    List<Car> getCars(int count);
+//}

@@ -52,6 +52,13 @@
             <version>3.0.14.RELEASE</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.2.0</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

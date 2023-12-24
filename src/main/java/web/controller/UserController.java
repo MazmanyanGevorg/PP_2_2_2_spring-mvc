@@ -19,7 +19,6 @@ public class UserController {
     @GetMapping(value = "/users") // путь в браузере
     public String viewUsers(Model model) {
         model.addAttribute("users", userService.getAllUser()); // users -> "${users}" в users.html файле
-        model.addAttribute("users", userService.getAllUser()); // users -> "${users}" в users.html файле
         return "users"; //название файла -> users.html
     }
 

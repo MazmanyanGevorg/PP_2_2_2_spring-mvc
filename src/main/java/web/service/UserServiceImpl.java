@@ -42,19 +42,4 @@ public class UserServiceImpl implements UserService {
     public User readUser(Integer userId) {
         return userDAO.readUser(userId);
     }
-
-    @Override
-    public List<User> index() { // чтение
-        return userDAO.index(); // вместо users потом нужно указать бд
-    }
-
-    @Override
-    public User show(int id) { // чтение
-        return userDAO.show(id);
-    }
-
-    @Override
-    public void save(User user) {
-
-    }
 }

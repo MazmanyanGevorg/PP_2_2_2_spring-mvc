@@ -68,17 +68,14 @@ public class UserDAOImpl implements UserDAO {
         return null;
     }
 
-    @Override
     public List<User> index() { // чтение
         return users; // вместо users потом нужно указать бд
     }
 
-    @Override
     public User show(int id) { // чтение
         return users.stream().filter(user -> user.getId() == id).findAny().orElse(null);
     }
 
-    @Override
     public void save(User user) {
         user.setId(++USER_COUNT);
         users.add(user);

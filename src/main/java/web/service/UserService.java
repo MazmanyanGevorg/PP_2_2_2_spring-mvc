@@ -14,10 +14,4 @@ public interface UserService {
     User updateUser(User user);
 
     User readUser(Integer userId);
-
-    public List<User> index();
-
-    public User show(int id);
-
-    public void save(User user);
 }
